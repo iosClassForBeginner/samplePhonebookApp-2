@@ -38,7 +38,9 @@
 <div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/samplePhonebookApp-2/blob/master/Assets/9.png" /></div>
 
 - 以下コードブロックを記入
-`// MARK: - UITableView
+
+```Swift
+// MARK: - UITableView
 func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
 {
   return 20
@@ -54,7 +56,7 @@ func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexP
   cell.detailTextLabel?.text = "000-0000-0000"
   
   return cell
-}`
+}```
 
 ## アプリ教室に興味ある方、歓迎します。  
   Meetup  
