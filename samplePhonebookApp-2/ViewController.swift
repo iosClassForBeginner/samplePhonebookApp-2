@@ -12,6 +12,31 @@ class ViewController: UIViewController
 {
     @IBOutlet var tv: UITableView!
     
+    var telNo: [(name: String, num: String)] {
+        var array = [(name: String, num: String)]()
+        array.append((name:"初心者歓迎iOS Development Meetup!01", num:"000-0000-0000"))
+        array.append((name:"初心者歓迎iOS Development Meetup!02", num:"000-0000-0000"))
+        array.append((name:"初心者歓迎iOS Development Meetup!03", num:"000-0000-0000"))
+        array.append((name:"初心者歓迎iOS Development Meetup!04", num:"000-0000-0000"))
+        array.append((name:"初心者歓迎iOS Development Meetup!05", num:"000-0000-0000"))
+        array.append((name:"初心者歓迎iOS Development Meetup!06", num:"000-0000-0000"))
+        array.append((name:"初心者歓迎iOS Development Meetup!07", num:"000-0000-0000"))
+        array.append((name:"初心者歓迎iOS Development Meetup!08", num:"000-0000-0000"))
+        array.append((name:"初心者歓迎iOS Development Meetup!09", num:"000-0000-0000"))
+        array.append((name:"初心者歓迎iOS Development Meetup!10", num:"000-0000-0000"))
+        array.append((name:"初心者歓迎iOS Development Meetup!11", num:"000-0000-0000"))
+        array.append((name:"初心者歓迎iOS Development Meetup!12", num:"000-0000-0000"))
+        array.append((name:"初心者歓迎iOS Development Meetup!13", num:"000-0000-0000"))
+        array.append((name:"初心者歓迎iOS Development Meetup!14", num:"000-0000-0000"))
+        array.append((name:"初心者歓迎iOS Development Meetup!15", num:"000-0000-0000"))
+        array.append((name:"初心者歓迎iOS Development Meetup!16", num:"000-0000-0000"))
+        array.append((name:"初心者歓迎iOS Development Meetup!17", num:"000-0000-0000"))
+        array.append((name:"初心者歓迎iOS Development Meetup!18", num:"000-0000-0000"))
+        array.append((name:"初心者歓迎iOS Development Meetup!19", num:"000-0000-0000"))
+        array.append((name:"初心者歓迎iOS Development Meetup!20", num:"000-0000-0000"))
+        return array
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -21,7 +46,7 @@ class ViewController: UIViewController
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         // セルの数
-        return 20
+        return telNo.count
     }
     
     // セルを一つ一つ指定する
@@ -32,8 +57,10 @@ class ViewController: UIViewController
         let cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: identifer)
     
         // セルのデザイン
-        cell.textLabel?.text = "初心者歓迎iOS Development Meetup!"
-        cell.detailTextLabel?.text = "000-0000-0000"
+//        cell.textLabel?.text = "TEST"
+//        cell.detailTextLabel?.text = "123-4567-8912"
+        cell.textLabel?.text = telNo[indexPath.row].name
+        cell.detailTextLabel?.text = telNo[indexPath.row].name
         
         return cell
     }
