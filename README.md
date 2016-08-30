@@ -27,7 +27,7 @@
 <div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/samplePhonebookApp-2/blob/master/Assets/6.png" /></div>
 
 > 2-4. Delegate, DataSource を紐付けます (理由は考えず紐付けましょう)
-<div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/samplePhonebookApp-2/blob/master/Assets/7.png" /></div>
+<div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/samplePhonebookApp-2/blob/master/Assets/7.gif" /></div>
 
 #### 3, StoryboardとViewController.swiftを紐付けます
 > 3-1. UITableViewをViewControllerに紐付けます
