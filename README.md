@@ -56,7 +56,8 @@ func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexP
   cell.detailTextLabel?.text = "000-0000-0000"
   
   return cell
-}```
+}
+```
 
 ## アプリ教室に興味ある方、歓迎します。  
   Meetup  
